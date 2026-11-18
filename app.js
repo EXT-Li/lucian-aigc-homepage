@@ -9,11 +9,5 @@
     });
   });
 
-  const menuButton = document.querySelector(".icon-button");
-  const sidebar = document.querySelector(".sidebar");
-  if (menuButton && sidebar) {
-    menuButton.addEventListener("click", () => sidebar.classList.toggle("open"));
-    sidebar.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => sidebar.classList.remove("open")));
-  }
 })();
 
